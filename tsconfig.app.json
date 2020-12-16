@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "module": "esnext",
+    "types": [],
+    "noEmitHelpers": false,
+    "paths": {
+      "@src/*": [
+        "src/*.web",
+        "src/*"
+      ]
+    }
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ]
+}
